@@ -1,6 +1,13 @@
-
+import {useDispatch} from 'react-redux';
 
 function SearchView() {
+
+    const dispatch = useDispatch();
+
+    const addGiphy = (giphys) => {
+        dispatch({type: 'POST', payload: giphys})
+    }
+
 
     return (
         <div>
@@ -9,6 +16,7 @@ function SearchView() {
             type='text' 
             value='Search Giphys!' 
             onChange='TBD'/>
+            <button onClick= {(event) => searchGiphy('Giphy')}>Search Giphys</button>
         </div>
     );
 }
