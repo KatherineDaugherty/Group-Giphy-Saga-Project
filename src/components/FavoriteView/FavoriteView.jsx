@@ -1,13 +1,16 @@
 
-
 function FavoriteView() {
 
-    return(
+    return (
 
-<div>WHATS UP?!?!</div>
+
+
+<div className="container">
+{/* <img src={} /> */}
+</div>
 
     )
-}
+}//end FavoriteView
 
 
 
