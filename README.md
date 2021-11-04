@@ -29,9 +29,9 @@ You will need 2 views for the Base Features. You should put some thought into th
 
 ### Search View
 
-- Allow a user to enter a search string and submit a search request.
-- Query the `Giphy API Search Endpoint` with the given search string **FROM THE SERVER**.
-- Display the results on the DOM.
+- Allow a user to enter a search string and submit a search request. JACOB 
+- Query the `Giphy API Search Endpoint` with the given search string **FROM THE SERVER**. ROB
+- Display the results on the DOM. ROB 
 - Allow a user to Favorite any of the resulting images. You'll need to think about what information to save to your own database. Generally you only store the minimum needed to show this image again on the **Favorites View**.
 
 
