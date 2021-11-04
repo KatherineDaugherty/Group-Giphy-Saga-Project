@@ -8,6 +8,7 @@ function SearchView() {
         dispatch({type: 'POST', payload: giphys})
     }
 
+    
 
     return (
         <div>
@@ -16,7 +17,7 @@ function SearchView() {
             type='text' 
             value='Search Giphys!' 
             onChange='TBD'/>
-            <button onClick= {(event) => searchGiphy('Giphy')}>Search Giphys</button>
+            <button onClick= {(event) => searchGiphy(evt.target.value)}>Search Giphys</button>
         </div>
     );
 }
