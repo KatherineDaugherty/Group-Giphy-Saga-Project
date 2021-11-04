@@ -9,8 +9,20 @@ router.get('/', (req, res) => {
 });
 
 // add a new favorite
+//POST KD 
 router.post('/', (req, res) => {
-  res.sendStatus(200);
+  const newFavorite = req.body;
+  const queryText = `INSERT INTO favorite ("url")
+  VALUES ($1)`;
+  const queryValues = [
+    newFavorite.url
+  ];
+  pool.query(queryText, queryValues)
+    .then(() => { res.sendStatus(201); })
+    .catch((err) => {
+      console.log('ERROR in POST', err);
+      res.sendStatus(500);
+    });
 });
 
 // update given favorite with a category id
