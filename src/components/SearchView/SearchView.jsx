@@ -1,13 +1,14 @@
 // import {useDispatch} from 'react-redux';
 import { useState } from 'react';
 import axios from 'axios';
+import GifCard from '../GifCard/GifCard';
 
 function SearchView() {
 
     // const dispatch = useDispatch();
 
     const [keyWord, setKeyWord] = useState('');
-    const [listStorage, setListStorage] = useState('');
+    const [listStorage, setListStorage] = useState([]);
 
     const searchGiphy = () => {
         axios({
@@ -17,7 +18,7 @@ function SearchView() {
         }).then((response) => {
             console.log('HELLO ', response.data);
 
-            setListStorage(response.data)
+            setListStorage(response.data.data)
         }).catch((error) => {
             console.log(error);
             alert('Unable to POST');
@@ -26,7 +27,7 @@ function SearchView() {
     }
 
 
-    return (
+    return (<>
         <div>
             <p>The Fantastic World of Giphys!!!</p>
             <input
@@ -35,6 +36,20 @@ function SearchView() {
                 onChange={evt => setKeyWord(evt.target.value)} />
             <button onClick={searchGiphy}>Search Giphys</button>
         </div>
+
+        <div>
+            {listStorage.map((gif,i) => {
+                return(
+                <GifCard key={i} gif={gif} />
+            )})}
+        </div>
+
+        <div>
+            <img src="" alt="" />
+            <button >Favorite</button>
+        </div>
+    </>
+
     );
 }
 
