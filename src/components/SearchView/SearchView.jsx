@@ -1,11 +1,14 @@
 import {useDispatch} from 'react-redux';
+import {useState} from 'react';
 
 function SearchView() {
 
     const dispatch = useDispatch();
 
-    const addGiphy = (giphys) => {
-        dispatch({type: 'POST', payload: giphys})
+    const  [keyWord, setKeyWord] = useState('');
+
+    const searchGiphy = () => {
+        dispatch({type: 'POST', payload: keyWord})
     }
 
     
@@ -15,9 +18,9 @@ function SearchView() {
             <p>The Fantastic World of Giphys!!!</p>
             <input 
             type='text' 
-            value='Search Giphys!' 
-            onChange='TBD'/>
-            <button onClick= {(event) => searchGiphy(evt.target.value)}>Search Giphys</button>
+            value={keyWord}
+            onChange={evt => setKeyWord(evt.target.value)}/>
+            <button onClick= {searchGiphy}>Search Giphys</button>
         </div>
     );
 }
