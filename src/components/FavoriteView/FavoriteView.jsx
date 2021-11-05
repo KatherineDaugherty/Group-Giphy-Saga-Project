@@ -4,12 +4,9 @@ function FavoriteView() {
 
     return(
 
-<div>WHATS UP?!?!</div>
+<div> Return some favorite gifs </div>
 
     )
 }
-
-
-
 
 export default FavoriteView;
