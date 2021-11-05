@@ -43,11 +43,11 @@ function SearchView() {
                 <GifCard key={i} gif={gif} />
             )})}
         </div>
-
+{/* //KD- do we still need this? 
         <div>
             <img src="" alt="" />
             <button >Favorite</button>
-        </div>
+        </div> */}
     </>
 
     );
