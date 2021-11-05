@@ -44,12 +44,6 @@ function SearchView() {
                 <GifCard key={i} gif={gif} />
             )})}
         </div>
-
-        <div>
-            <img src="" alt="" />
-            <button >Favorite</button>
-        </div>
-    
     </>
 
     );
