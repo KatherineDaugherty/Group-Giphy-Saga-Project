@@ -1,7 +1,6 @@
 import { useSelector } from 'react-redux';
 import './FavoriteView.css';
 
-
 function FavoriteView() {
 
     const favorites = useSelector((store) => store.passengersReducer)
