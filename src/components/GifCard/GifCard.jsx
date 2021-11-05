@@ -4,6 +4,7 @@ function GifCard({ gif }) {
 
     const imageUrl = gif.images.downsized_medium.url;
 
+    // const favCard = {};
 
     function addFavorite() {
 
@@ -19,7 +20,7 @@ function GifCard({ gif }) {
 
     //POST to fav
     return (
-        <div>
+        <div >
             <img src={imageUrl} />
             <br />
             <button onClick={addFavorite}>Favorite</button>

@@ -28,8 +28,9 @@ function SearchView() {
 
 
     return (<>
+    
         <div>
-            <p>The Fantastic World of Giphys!!!</p>
+            <h2>The Fantastic World of Giphys!!!</h2>
             <input
                 type='text'
                 value={keyWord}
@@ -43,11 +44,6 @@ function SearchView() {
                 <GifCard key={i} gif={gif} />
             )})}
         </div>
-{/* //KD- do we still need this? 
-        <div>
-            <img src="" alt="" />
-            <button >Favorite</button>
-        </div> */}
     </>
 
     );
