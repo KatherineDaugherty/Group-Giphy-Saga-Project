@@ -28,26 +28,25 @@ function SearchView() {
 
 
     return (<>
+    
         <div>
-            <p>The Fantastic World of Giphys!!!</p>
+            <h2>The Fantastic World of Giphys!!!</h2>
             <input
                 type='text'
                 value={keyWord}
                 onChange={evt => setKeyWord(evt.target.value)} />
             <button onClick={searchGiphy}>Search Giphys</button>
+            <br/>
         </div>
 
         <div>
+        <br/>
+
             {listStorage.map((gif,i) => {
                 return(
                 <GifCard key={i} gif={gif} />
             )})}
         </div>
-{/* //KD- do we still need this? 
-        <div>
-            <img src="" alt="" />
-            <button >Favorite</button>
-        </div> */}
     </>
 
     );
