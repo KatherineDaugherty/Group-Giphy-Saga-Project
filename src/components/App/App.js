@@ -3,6 +3,7 @@ import SearchView from '../SearchView/SearchView';
 import FavoriteView from '../FavoriteView/FavoriteView.jsx'
 import './App.css';
 
+
 function App(props) {
   return (
     
