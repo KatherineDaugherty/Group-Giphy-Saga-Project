@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import FavoriteCard from '../FavoriteCard/FavoriteCard';
 
 
 function FavoriteView() {
@@ -20,7 +21,10 @@ useEffect(() => {
     return (
 
         <div className="container">
-            <img src={favorites} />
+            {favorites.map((gif,i) => {
+                return(
+                <FavoriteCard key={i} gif={gif} />
+            )})}
         </div>
     )
 }//end FavoriteView
