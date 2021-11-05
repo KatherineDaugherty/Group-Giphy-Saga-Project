@@ -1,18 +1,22 @@
-import { useSelector } from 'react-redux';
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 
 
 function FavoriteView() {
-
-    const favorites = useSelector((store) => store.passengersReducer)
+const dispatch = useDispatch();
+    const favorites = useSelector((store) => store.favoritesReducer)
 
 
     const favView = () => {
         dispatch({
-            type: 'FAV_VIEW',
+            type: 'FETCH_FAVS',
         })
     }
 
-
+useEffect(() => {
+    
+    favView();
+},[])
     return (
 
         <div className="container">
