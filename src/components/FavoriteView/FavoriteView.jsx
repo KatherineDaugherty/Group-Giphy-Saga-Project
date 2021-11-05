@@ -1,4 +1,4 @@
-import {useSelector} from 'react-redux';
+import { useSelector } from 'react-redux';
 
 
 function FavoriteView() {
@@ -8,17 +8,16 @@ function FavoriteView() {
 
     const favView = () => {
         dispatch({
-          type: 'FAV_VIEW',
+            type: 'FAV_VIEW',
         })
     }
-  
+
 
     return (
 
-<div className="container">
-<img src={favorites} />
-</div>
-
+        <div className="container">
+            <img src={favorites} />
+        </div>
     )
 }//end FavoriteView
 

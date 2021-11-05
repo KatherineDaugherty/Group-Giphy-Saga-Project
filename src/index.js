@@ -28,7 +28,7 @@ const storeInstance = createStore(
     applyMiddleware(sagaMiddleware, logger),
 );
 
-// sagaMiddleware.run(rootSage);
+sagaMiddleware.run(rootSage);
 
 ReactDOM.render(<Provider store={storeInstance}>
     <App />
