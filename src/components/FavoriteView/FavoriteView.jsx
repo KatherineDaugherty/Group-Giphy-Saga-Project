@@ -1,13 +1,25 @@
+import { useSelector } from 'react-redux';
 
 
 function FavoriteView() {
 
-    return(
+    const favorites = useSelector((store) => store.passengersReducer)
 
-<div>WHATS UP?!?!</div>
 
+    const favView = () => {
+        dispatch({
+            type: 'FAV_VIEW',
+        })
+    }
+
+
+    return (
+
+        <div className="container">
+            <img src={favorites} />
+        </div>
     )
-}
+}//end FavoriteView
 
 
 

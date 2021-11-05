@@ -11,11 +11,19 @@ import logger from 'redux-logger';
 
 // }
 
+const favoritesReducer = (state = [], action) => {
+    if (action.type === 'FAV_VIEW') {
+      return [...state, action.payload];
+    } 
+    return state;
+  }
+  
+
 const sagaMiddleware = createSagaMiddleware();
 
 const storeInstance = createStore(
     combineReducers({
-
+        favoritesReducer,
     }),
     applyMiddleware(sagaMiddleware, logger),
 );
