@@ -23,15 +23,13 @@ function App(props) {
       </nav>
 
       <div>
-        <h1 className="neonText">Giphy Search!</h1>
-        <SearchView />
-        <FavoriteView />
-        <h1>Giphy Search!</h1>
         <Route path="/" exact>
+        <h1 className="neonText">Giphy Search!</h1>
           <SearchView />
         </Route>
 
         <Route path="/FavoriteView">
+        <h1 className="neonText">My Favorite Gifs!!!</h1>
           <FavoriteView />
         </Route>
 

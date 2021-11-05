@@ -21,11 +21,13 @@ function GifCard({ gif }) {
 
     //POST to fav
     return (
-        <div >
-            <img className="container" src={imageUrl} />
+        <div className="container">
+            <div className="item">
+            <img  src={imageUrl} />
             <br />
             <button onClick={addFavorite}>Favorite</button>
-            <br />
+            </div>
+            
         </div>
     )
 

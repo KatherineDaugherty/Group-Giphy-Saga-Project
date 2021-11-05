@@ -38,9 +38,9 @@ function SearchView() {
             <button onClick={searchGiphy}>Search Giphys</button>
             <br/>
         </div>
-
-        <div>
         <br/>
+        <div className="container">
+       
 
             {listStorage.map((gif,i) => {
                 return(
