@@ -8,7 +8,7 @@
   }
   .container:after {
     display: block;
-    content: " placeholder- gifs will live here  ";
+    content: '' ;
     margin: 10px;
     flex: 999 999 auto;
   }

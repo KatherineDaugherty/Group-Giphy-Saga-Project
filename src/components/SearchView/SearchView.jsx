@@ -30,7 +30,7 @@ function SearchView() {
     return (<>
     
         <div>
-            <h2>The Fantastic World of Giphys!!!</h2>
+            <h2 className="neonText">The Fantastic World of Giphys!!!</h2>
             <input
                 type='text'
                 value={keyWord}
@@ -38,9 +38,9 @@ function SearchView() {
             <button onClick={searchGiphy}>Search Giphys</button>
             <br/>
         </div>
-
-        <div>
         <br/>
+        <div className="container">
+       
 
             {listStorage.map((gif,i) => {
                 return(

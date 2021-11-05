@@ -19,7 +19,7 @@ function FavoriteView() {
         favView();
     }, [])
     return (<>
-        <h1> Favorite's Page </h1>
+        <h1 className="neonText"> Favorites Page </h1>
 
         <div className="container">
             {favorites.map((gif, i) => {

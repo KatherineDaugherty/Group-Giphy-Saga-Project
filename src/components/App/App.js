@@ -1,6 +1,7 @@
 import React from 'react';
 import SearchView from '../SearchView/SearchView';
 import FavoriteView from '../FavoriteView/FavoriteView.jsx'
+import './App.css';
 
 //adding Links & Routes 
 import {
@@ -22,12 +23,13 @@ function App(props) {
       </nav>
 
       <div>
-        <h1>Giphy Search!</h1>
         <Route path="/" exact>
+        <h1 className="neonText">Giphy Search!</h1>
           <SearchView />
         </Route>
 
         <Route path="/FavoriteView">
+        <h1 className="neonText">My Favorite Gifs!!!</h1>
           <FavoriteView />
         </Route>
 
