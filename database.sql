@@ -19,3 +19,4 @@ CREATE TABLE "favorite" (
     "id" SERIAL PRIMARY KEY,
     "url" VARCHAR (500) NOT NULL
 );
+

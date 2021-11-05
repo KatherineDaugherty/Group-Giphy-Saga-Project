@@ -8,7 +8,7 @@ function App(props) {
   return (
     
       <div>
-        <h1 class="neonText">Giphy Search!</h1>
+        <h1 className="neonText">Giphy Search!</h1>
         <SearchView />
         <FavoriteView />
       </div>

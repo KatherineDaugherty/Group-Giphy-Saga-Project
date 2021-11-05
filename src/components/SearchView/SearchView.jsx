@@ -30,7 +30,7 @@ function SearchView() {
     return (<>
     
         <div>
-            <h2 class="neonText">The Fantastic World of Giphys!!!</h2>
+            <h2 className="neonText">The Fantastic World of Giphys!!!</h2>
             <input
                 type='text'
                 value={keyWord}
