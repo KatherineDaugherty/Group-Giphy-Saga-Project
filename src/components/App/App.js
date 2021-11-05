@@ -17,6 +17,7 @@ function App(props) {
     <Router>
       <nav>
         <Link to="/">Search Gif</Link>
+        <br/>
         <Link to="/FavoriteView"> Favorites </Link>
       </nav>
 
