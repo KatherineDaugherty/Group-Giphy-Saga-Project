@@ -36,9 +36,12 @@ function SearchView() {
                 value={keyWord}
                 onChange={evt => setKeyWord(evt.target.value)} />
             <button onClick={searchGiphy}>Search Giphys</button>
+            <br/>
         </div>
 
         <div>
+        <br/>
+
             {listStorage.map((gif,i) => {
                 return(
                 <GifCard key={i} gif={gif} />

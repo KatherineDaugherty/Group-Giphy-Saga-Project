@@ -1,4 +1,5 @@
 import axios from "axios";
+import './GifCard.css';
 
 function GifCard({ gif }) {
 
@@ -24,6 +25,7 @@ function GifCard({ gif }) {
             <img className="container" src={imageUrl} />
             <br />
             <button onClick={addFavorite}>Favorite</button>
+            <br />
         </div>
     )
 
