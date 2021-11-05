@@ -6,15 +6,5 @@
     align-items: auto;
     align-content: center
   }
-  .container:after {
-    display: block;
-    content: " placeholder ";
-    margin: 10px;
-    flex: 999 999 auto;
-  }
-  .item {
-    flex: 1 1 auto;
-    margin: 10px;
-  }
 
   
